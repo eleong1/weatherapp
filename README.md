@@ -1,5 +1,7 @@
 weatherapp
 ==========
+by Edwin Leong
+
 Summary
 ==========
 This javascript application takes in a user specified city and returns the five day forecast as given by Yahoo Weather.
