@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Five Day Weather Forecast App</title>
-        <!-- Angular -->
+    <!-- Angular -->
     <script src="js/angular.min.js"></script>
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,7 @@
     <h1>Weather Forecast</h1>
     <!-- forms -->
     <form ng-submit="getWeather()" class="form-inline" role="form">
+      <!-- get user specified city -->
       <div class="form-group">
         <label class="sr-only" for="inputCity">City</label>
         <input ng-model="enteredCity" type="text" class="form-control" placeholder="Enter City">
@@ -32,6 +33,7 @@
       <h3>Five Day Weather Forecast</h3>
       <div class="table-responsive">
         <table class="table table-hover">
+          <!-- table headers -->
           <tr>
             <th>Date</th>
             <th>Day of the Week</th>
@@ -39,6 +41,7 @@
             <th>Daily Low</th>
             <th>Weather Condition</th>
           </tr>
+          <!-- table for the five day weather forecast -->
           <tr ng-repeat="day in fiveDayForecast">
             <td> {{day.date}} </td>
             <td> {{day.day}} </td>
