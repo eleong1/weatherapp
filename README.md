@@ -18,3 +18,4 @@ Known issues
 ==========
 - Cities which share a name can not be distinguished between, work around may involve determining duplicate cities and utilizing their specific ids in the Yahoo query.
 - Regions and Countries can also be specified, unintended
+- controller.js has not been written for minification
